@@ -1,0 +1,79 @@
+$fiol-color:#7A29E7;
+$bel-color:#ffff;
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+@mixin narmin(){
+    width: 280px;
+    box-shadow: 5px 10px 8px 10px #c8c6c6;
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 50px;
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        top:25px; 
+        left:25%;
+        position:absolute; 
+        border: 2px solid $fiol-color;
+    }
+   .card-img{
+    border-radius:4px solid $fiol-color ;
+   }
+    .card-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: $fiol-color;
+        color: $bel-color;
+        padding:20px 20px 20px 0px;
+        border-radius: 16px 16px 0 0;
+    }
+    .card-items{
+        i{
+            margin-bottom:20px;
+        }
+    }
+
+    h1{
+        margin:40px 0 0 0;
+        font-size: 23px;
+    }
+    p{
+        margin: 10px 0 10px 0;
+    }
+    button{
+        color: $bel-color;
+        background-color: $fiol-color;
+        width: 100px;
+        padding: 10px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: none;
+
+    }
+    .card-knopki{
+        margin: 5px 0 25px 0;
+    }
+    .card-2cast {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        i{
+            color:$fiol-color;
+            margin:0px 0px 14px 0px;
+        }
+    }
+}
+.card1{
+    @include narmin();
+}
+.card2{
+    @include narmin();
+}
+.card3{
+    @include narmin();
+}
